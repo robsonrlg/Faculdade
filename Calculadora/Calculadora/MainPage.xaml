@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <VerticalStackLayout Padding="10" Spacing="10" BackgroundColor="#f0f0f0">
+
+
+        <Border Stroke="#ffffff" StrokeThickness="2" Padding="5" BackgroundColor="#afafaf">
+            <Label
+                x:Name="DisplayLabel"
+                Text="0"
+                HorizontalOptions="End"
+                VerticalOptions="CenterAndExpand"
+                FontSize="35"
+                TextColor="#ffffff"
+                Margin="10, 20, 10, 20"/>
+        </Border>
+
+
+        <Grid RowSpacing="5" ColumnSpacing="5">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <Button Grid.Row="0" Grid.Column="0" Text="C" Background="#990400" TextColor="White" Clicked="OnClearClicked"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="%" Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+            <Button Grid.Row="0" Grid.Column="2" Text="⌫" Background="#000000" TextColor="White" Clicked="OnBackspaceClicked"/>
+            <Button Grid.Row="0" Grid.Column="3" Text="/" Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+
+
+            <Button Grid.Row="1" Grid.Column="0" Text="7" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="8" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="9" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="x" Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+
+
+            <Button Grid.Row="2" Grid.Column="0" Text="4" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="5" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="6" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="-" Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+
+
+            <Button Grid.Row="3" Grid.Column="0" Text="1" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="2" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="3" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="+" Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+
+
+            <Button Grid.Row="4" Grid.Column="0" Text="." Background="#000000" TextColor="White" Clicked="OnOperatorClicked"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="0" Background="#0f9f4f" TextColor="White" Clicked="OnNumberClicked"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="=" Background="#ffffa0" TextColor="#000000" Clicked="OnEqualClicked"/>
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
