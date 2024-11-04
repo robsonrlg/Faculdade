@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppFlyoutPage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0e73542e17308facfc10c00d0d82f81776601bc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppFlyoutPage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppFlyoutPage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
